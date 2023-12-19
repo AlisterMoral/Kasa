@@ -1,32 +1,15 @@
 import React from 'react';
 import '../styles/Location.css';
+import Card from './Card';
+import appartements from '../logements.json';
+console.log(appartements)
 
 const Location = () => {
   return (
     <div className="location-container">
-      <article className='location-card'>
-          <div className='card-content'>Titre de la location</div>
-      </article>
-
-      <article className='location-card'>
-          <div className='card-content'>Titre de la location</div>
-      </article>
-
-      <article className='location-card'>
-          <div className='card-content'>Titre de la location</div>
-      </article>
-
-      <article className='location-card'>
-          <div className='card-content'>Titre de la location</div>
-      </article>
-
-      <article className='location-card'>
-          <div className='card-content'>Titre de la location</div>
-      </article>
-
-      <article className='location-card'>
-          <div className='card-content'>Titre de la location</div>
-      </article>
+      {appartements.map(appartement => <Card title={appartement.title} key={appartement.id}/>)}
+      
+      
     </div>
   );
 };

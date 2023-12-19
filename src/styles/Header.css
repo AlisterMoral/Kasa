@@ -11,6 +11,7 @@
     display: flex;
     gap: 57px;  
     margin-right: 350px;
+    cursor: pointer;
 }
 
 .acceuil-link{
@@ -22,6 +23,7 @@
     font-weight: 500;
     line-height: 142.6%; 
     text-decoration-line: underline;
+    
 }
 
 .propos-link {
